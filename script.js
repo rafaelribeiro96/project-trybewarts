@@ -24,11 +24,20 @@ function checkAgreement() {
   }
 }
 
+function characterCount(e) {
+  const counter = document.getElementById('counter');
+  counter.innerHTML = 500 - e.target.value.length;
+  
+}
+
 const start = () => {
   const loginBtn = document.getElementById('loginBtn');
   loginBtn.addEventListener('click', validateLogin);
 
   const checkbox = document.getElementById('agreement');
   checkbox.onchange = checkAgreement;
+
+  const textarea = document.getElementById('textarea');
+  textarea.addEventListener('keyup', characterCount);
 };
 start();
