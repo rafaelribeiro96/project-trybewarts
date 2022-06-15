@@ -15,7 +15,7 @@
 .trybewarts-header-logo {
   width: 80px;
 }
-  
+
 .trybewarts-header-title {
   color: rgb(47, 53, 53);
   font-family: sans-serif;
@@ -41,4 +41,13 @@
   border-radius: 3px;
   border-style: none;
   border: solid 1px gray;
+}
+
+.container {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
 }
