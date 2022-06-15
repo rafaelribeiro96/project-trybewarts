@@ -49,13 +49,17 @@
 
 #evaluation-form {
   display: flex;
-  width: 675px;
+  min-width: 675px;
   flex-direction: column;
 }
 
 .name-lastname {
   display: flex;
   justify-content: space-between;
+}
+
+.name {
+  width: 49%;
 }
 
 .email-casa {
@@ -82,4 +86,38 @@
 
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+#textarea {
+  resize: none;
+}
+
+#submit-btn {
+  width: 100%;
+}
+
+#form-data {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 675px;
+  flex-grow: 1;
+  padding: 25px;
+}
+
+.pElements {
+  display: none;
+  padding: 10px;
+  margin-bottom: 2px;
+  border: 1px solid rgb(182, 182, 182);
+  border-radius: 3px;
+}
+
+footer {
+  background-color: rgb(50, 167, 145);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
