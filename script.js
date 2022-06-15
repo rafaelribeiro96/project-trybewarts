@@ -12,12 +12,7 @@ function validateLogin() {
   }
 }
 
-const start = () => {
-  const loginBtn = document.getElementById('loginBtn');
-  loginBtn.addEventListener('click', validateLogin);
-};
-start();
-
+// Função que verifica se o checkbox foi selecionado
 function checkAgreement() {
   const checkbox = document.getElementById('agreement');
   const sendButton = document.getElementById('submit-btn');
@@ -29,5 +24,11 @@ function checkAgreement() {
   }
 }
 
-const checkbox = document.getElementById('agreement');
-checkbox.onchange = checkAgreement;
+const start = () => {
+  const loginBtn = document.getElementById('loginBtn');
+  loginBtn.addEventListener('click', validateLogin);
+
+  const checkbox = document.getElementById('agreement');
+  checkbox.onchange = checkAgreement;
+};
+start();
