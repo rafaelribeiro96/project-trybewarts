@@ -104,4 +104,3 @@ const start = () => {
   submitBtn.addEventListener('click', hideChildForm);
 };
 start();
-
