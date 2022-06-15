@@ -53,8 +53,14 @@
   flex-direction: column;
 }
 
-#name-lastname {
+.name-lastname {
   display: flex;
+  justify-content: space-between;
+}
+
+.email-casa {
+  display: flex;
+  align-items: center;
 }
 
 #trybewarts-forms-logo {
